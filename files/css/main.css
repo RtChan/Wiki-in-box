@@ -34,7 +34,7 @@ body>#header h1 {
 body>#main {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	/* Modified by Rt */
+	/* Modified by RtChan */
 	width: auto;
 }
 body>#main #content {
@@ -78,6 +78,7 @@ pre {
 	word-break: normal; 
 	padding: 0 60px;
 	margin: 0.6em -60px;
+	/* Modified by RtChan */
 	/*background: #23241f;*/
 	/*color: #f8f8f2;*/
 	font-size: 16px;

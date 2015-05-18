@@ -34,5 +34,16 @@
 	3. 至此操作完毕，几分钟后访问 http://username.github.com/Wiki-in-box/ 即可看到你的网页。
 	4. 如果不能访问，可能是操作有误或者是我某些步骤遗漏了，毕竟我是凭记忆写下来的，如果对Linux或者Git不熟悉的话，出现某些问题确实不知道怎么解决。有什么问题的话，欢迎都与我一起讨论。
 	5. 给出参考资料：<br>[搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html "http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html")<br>[使用 GitHub, Jekyll 打造自己的免费独立博客](http://blog.csdn.net/on_1y/article/details/19259435 "http://blog.csdn.net/on_1y/article/details/19259435")<br>[git 分支 合并](http://www.cnblogs.com/sk-net/archive/2011/07/11/2103282.html "http://www.cnblogs.com/sk-net/archive/2011/07/11/2103282.html")</br>
-6. **Wiki-in-box的使用**
-	1. 
+6. **Wiki-in-box的使用** <br>Wiki in box 的定制与修改基本上属于前端的内容了，但是我对这方面并无涉猎，下文都是我自己试着改出来的。应该会有很多错误以及错误的操作，恳请大家一一指出不吝赐教。</br>
+	1. **修改页面宽度**<br>在main.css中，第34行，body>#main区块最后添加一句 ``width: auto;``即可实现页面宽度自动调整。可以将auto改为相应的数值与单位以实现固定宽度。</br>
+	2. **修改代码高亮样式**<br>在index.html中，第11行，monokai_sublime.css修改为你想使用的高亮样式。</br>
+	3. **修改代码块外观**<br>这个与上面的不同，上面是根据css文件来决定代码关键字的颜色，这个部分是决定显示代码区块的行号以及背景色。举个例子，我使用的是vs.css样式，默认情况下背景是黑色的，很难看，因此还要需要修改main.css文件。<br>在main.css中，第72行，pre区块中，background和color参数注释掉即可。</br>
+	4. 给出参考资料<br>一个wiki in box的项目 [my-wiki](https://github.com/dmscode/my-wiki "https://github.com/dmscode/my-wiki")<br>代码高亮js [highlightjs.org](https://highlightjs.org/ "https://highlightjs.org/")</br>
+7. **Wiki-in-box的未解之谜**
+	1. 代码区块的行距如何调整？
+	2. 文章字体如何调整？
+	3. 顶部Wiki-in-box字样及背景如何修改？
+
+
+----------
+END OF DOCUMENT
