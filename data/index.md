@@ -1,5 +1,4 @@
-Index
-===
+# Index #
 
 + Tutorial
 	+ [Wiki in box 示例文档](tutorial)
