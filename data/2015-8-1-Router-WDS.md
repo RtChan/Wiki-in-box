@@ -22,19 +22,19 @@
 > 频道：也就是“信道”。手动设定一个固定的频道，不能使用“自动”，记录，供副路由器使用<br>
 > 安全选项：记录，供副路由器使用<br>
 > 密码：记录，供副路由器使用<br>
-> ![NETGEAR_WIFI](imgs/2015-8-1/NETGEAR_WIFI "NETGEAR的WIFI配置")
+> ![NETGEAR_WIFI](imgs/2015-8-1/NETGEAR_WIFI.jpg "NETGEAR的WIFI配置")
 
 启用主路由器的WDS功能。
 > **页面位置：NETGEAR管理页 -> “高级”选项卡 -> 高级设置 -> 无线中继功能**<br>
 > 勾选“启用无线中继功能(2.4GHz b/g/n)”<br>
 > 选择“中心基站模式”<br>
 > 中继器MAC地址 1：填写副路由器MAC地址（可在副路由器背面找到）<br>
-> ![NETGEAR_WDS](imgs/2015-8-1/NETGEAR_WDS "NETGEAR的WDS配置")
+> ![NETGEAR_WDS](imgs/2015-8-1/NETGEAR_WDS.jpg "NETGEAR的WDS配置")
 
 为了方便管理与避免地址冲突，设置副路由器LAN口地址与主路由器不同，重启副路由器。 
 > **页面位置：TP-LINK管理页 -> 网络参数 -> LAN口设置**<br>
 > IP地址：192.168.1.254<br>
-> ![TPLINK_LAN](imgs/2015-8-1/TPLINK_LAN "TP-LINK的LAN配置")
+> ![TPLINK_LAN](imgs/2015-8-1/TPLINK_LAN.jpg "TP-LINK的LAN配置")
 
 设置无线网络信息及WDS配置，注意，此处部分参数需要与主路由器参数一致。
 > **页面位置：TP-LINK管理页 -> 无线设置 -> 基本设置**<br>
@@ -51,7 +51,7 @@
 > 秘钥类型：与主路由器一致<br>
 > WEP秘钥序号：一般情况下无需修改 **注2*<br>
 > 秘钥：与主路由器WIFI连接密码一致<br>
-> ![TPLINK_WDS](imgs/2015-8-1/TPLINK_WDS "TP-LINK的WDS配置")
+> ![TPLINK_WDS](imgs/2015-8-1/TPLINK_WDS.jpg "TP-LINK的WDS配置")
 
 保存页面后，WDS功能已启动。接下来设置副路由器的WIFI密码。注意，如果是开放的WIFI网络，此步骤可不设置。
 > **页面位置：TP-LINK管理页 -> 无线设置 -> 无线安全设置**<br>
@@ -59,12 +59,12 @@
 > 认证类型：默认即可，建议选择WPA2-PSK
 > 加密算法：默认即可，建议选择AES
 > PSK密码：也就是副路由器的WIFI连接密码。随意即可，建议与主路由器的WIFI密码一致。**注1*<br>
-> ![TPLINK_WIFI_SAFE](imgs/2015-8-1/TPLINK_WIFI_SAFE "TP-LINK的WIFI安全配置")
+> ![TPLINK_WIFI_SAFE](imgs/2015-8-1/TPLINK_WIFI_SAFE.jpg "TP-LINK的WIFI安全配置")
 
 接下来，由于主路由器已启用DHCP服务器功能，因此关闭副路由器的DHCP服务器功能。
 > **页面位置：TP-LINK管理页 -> DHCP服务器 -> DHCP服务**<br>
 > DHCP服务器：不启用<br>
-> ![TPLINK_DHCP](imgs/2015-8-1/TPLINK_DHCP "TP-LINK的DHCP配置")
+> ![TPLINK_DHCP](imgs/2015-8-1/TPLINK_DHCP.jpg "TP-LINK的DHCP配置")
 
 **注1*：当副路由器与主路由器的SSID及密码相同时，接入的设备可在两个路由器间无缝切换。也就是走出了主路由器的信号范围，手机会自动连接上副路由器。
 
@@ -72,7 +72,7 @@
 
 此时，查看副路由器状态页，可以看到WDS功能启动成功。但注意，开启成功不代表可以正常上网。
 > **页面位置：TP-LINK管理页 -> 运行状态**<br>
-> ![TPLINK_STATUS](imgs/2015-8-1/TPLINK_STATUS "TP-LINK的运行状态页")
+> ![TPLINK_STATUS](imgs/2015-8-1/TPLINK_STATUS.jpg "TP-LINK的运行状态页")
 
 此时WDS设置已经完毕。理论上此时就可以上网了。但是发现连接副路由器后可以访问控制页面但不能浏览网页。想起NETGEAR设置了ARP保护，因此需要将副路由器添加到静态ARP表。
 > **页面位置：NETGEAR管理页 -> “高级”选项卡 -> 安装 -> 局域网IP设置**<br>
