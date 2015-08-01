@@ -39,7 +39,7 @@ body>#main {
 }
 body>#main #content {
 	background: #FEFEFE;
-	padding: 35px 60px;
+	padding: 35px 30px;
 	min-height: 480px;
 	border:1px solid #CECECE;
 	-webkit-box-shadow: 0 2px 3px 5px #EEE;
